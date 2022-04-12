@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_Name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_Show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="send" />
+
+    <TextView
+        android:id="@+id/tv_Show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/connect_succeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connect success"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/connect_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connect failed:("
+        android:textSize="15sp"
+        android:visibility="invisible" />
+    <!-- add ImageView to display the captured image-->
+
+    <ImageView
+        android:id="@+id/click_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/recvmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="50sp"
+        android:visibility="visible" />
+</LinearLayout>
